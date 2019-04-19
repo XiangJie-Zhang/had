@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suffix>
+    <mov>avi</mov>
+    <mov>mpeg</mov>
+    <mov>rm</mov>
+    <mov>rmvb</mov>
+    <mov>wmv</mov>
+    <mov>vcd</mov>
+    <mov>dat</mov>
+    <mov>vob</mov>
+    <mov>mov</mov>
+    <mov>mkv</mov>
+    <mov>flv</mov>
+    <mov>asf</mov>
+    <img>bmp</img>
+    <img>jpg</img>
+    <img>png</img>
+    <img>tif</img>
+    <img>gif</img>
+    <img>pcx</img>
+    <img>tga</img>
+    <img>svg</img>
+    <img>psd</img>
+    <img>cdr</img>
+    <img>pcd</img>
+    <img>jpeg</img>
+</suffix>

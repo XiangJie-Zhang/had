@@ -1,0 +1,19 @@
+
+@squid:S1989_"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿ
+?squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+:squid:S1989H"#Add a "try/catch" block for "copy".(°ÓÆž
+bsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(¶öÂ
+Qsquid:S2209-"5Change this instance-reference to a static reference.(øòÍýÿÿÿÿ
+nsquid:S00117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì™»™þÿÿÿÿ
+;squid:S1989J"$Add a "try/catch" block for "close".(„¸Ç§
+Vsquid:S1161":Add the "@Override" annotation above this method signature(´È®‚ýÿÿÿÿ
+@squid:S1989I"$Add a "try/catch" block for "close".(€¶º‡ýÿÿÿÿ
+nsquid:S00117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰þÌøÿÿÿÿ
+Dsquid:S19899"(Add a "try/catch" block for "getString".(«Éžªøÿÿÿÿ
+O
+squid:S106;"9Replace this use of System.out or System.err by a logger.(ÿ’‰“
+@squid:S1989_"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿ
+Qsquid:S1161^":Add the "@Override" annotation above this method signature(§œ×ä
+Isquid:S1989E"-Add a "try/catch" block for "getInputStream".(¡÷¾Ïûÿÿÿÿ
+gsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ˆŠäáÿÿÿÿÿ
+bsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(‹Ìæ„

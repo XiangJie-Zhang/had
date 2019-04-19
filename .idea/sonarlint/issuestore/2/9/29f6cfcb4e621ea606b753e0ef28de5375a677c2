@@ -1,0 +1,30 @@
+
+Ijavascript:S1442İ" Remove this usage of alert(...).(¶Ø€ıÿÿÿÿ8ÜØ¿È¢-
+Ejavascript:S1442"!Remove this usage of prompt(...).(ï–‡‚8ÜØ¿È¢-
+ijavascript:UnusedVariable„"7Remove the declaration of the unused 'qrcode' variable.(ƒÁ¥¸üÿÿÿÿ8ÜØ¿È¢-
+bjavascript:S1854„"9Remove this useless assignment to local variable "qrcode"(ƒÁ¥¸üÿÿÿÿ8ÜØ¿È¢-
+Djavascript:S1442ê" Remove this usage of alert(...).(×¶ğˆ8ÜØ¿È¢-
+Ijavascript:S1442á" Remove this usage of alert(...).(ëââáıÿÿÿÿ8Ô¾Ù¢-
+javascript:S2703°"XAdd the "let", "const" or "var" keyword to this declaration of "id" to make it explicit.(ÅËúÿÿÿÿ8ÜØ¿È¢-
+gjavascript:UnusedVariable½"5Remove the declaration of the unused 'form' variable.(®¥©üÿÿÿÿ8ÜØ¿È¢-
+†javascript:S2703‹"]Add the "let", "const" or "var" keyword to this declaration of "content" to make it explicit.(Âõ¦ úÿÿÿÿ8ÜØ¿È¢-
+Djavascript:S1442É" Remove this usage of alert(...).(¶ªì¦8ÜØ¿È¢-
+`javascript:S1854"8Remove this useless assignment to local variable "param"(Ş†Í‹øÿÿÿÿ8‘ÀŸÚ¢-
+Kjavascript:S1442Ü""Remove this usage of confirm(...).(à•äêıÿÿÿÿ8ÜØ¿È¢-
+javascript:S2703¿"[Add the "let", "const" or "var" keyword to this declaration of "oData" to make it explicit.(±á¯²8ÜØ¿È¢-
+Ijavascript:S1442Ù" Remove this usage of alert(...).(Ú¡íüÿÿÿÿ8ÜØ¿È¢-
+Djavascript:S1442µ" Remove this usage of alert(...).(ÜŞ«Ò8ÜØ¿È¢-
+†javascript:S2703ª"bAdd the "let", "const" or "var" keyword to this declaration of "absolutePath" to make it explicit.(¡ıò8ÜØ¿È¢-
+Kjavascript:S1442«""Remove this usage of confirm(...).(èµùãøÿÿÿÿ8ÜØ¿È¢-
+[javascript:S1854ª"7Remove this useless assignment to local variable "name"(¹ß¬ó8ÜØ¿È¢-
+Ijavascript:S1442Í" Remove this usage of alert(...).(ëââáıÿÿÿÿ8ÜØ¿È¢-
+`javascript:S1854½"7Remove this useless assignment to local variable "form"(®¥©üÿÿÿÿ8ÜØ¿È¢-
+gjavascript:UnusedVariable"6Remove the declaration of the unused 'param' variable.(Ş†Í‹øÿÿÿÿ8‘ÀŸÚ¢-
+Ijavascript:S1442Í" Remove this usage of alert(...).(ëââáıÿÿÿÿ8ÜØ¿È¢-
+Hjavascript:S1442E" Remove this usage of alert(...).(˜Ü¢ıÿÿÿÿ8ÜØ¿È¢-
+Djavascript:S1442Œ" Remove this usage of alert(...).(ÜŞ«Ò8ÜØ¿È¢-
+Djavascript:S1442ß" Remove this usage of alert(...).(¼ëÊ8ÜØ¿È¢-
+bjavascript:UnusedVariableª"5Remove the declaration of the unused 'name' variable.(¹ß¬ó8ÜØ¿È¢-
+cjavascript:UnusedVariable³"6Remove the declaration of the unused 'width' variable.(Å¿ìÃ8ÜØ¿È¢-
+Djavascript:S1442" Remove this usage of alert(...).(²Êş™8ÜØ¿È¢-
+\javascript:S1854³"8Remove this useless assignment to local variable "width"(Å¿ìÃ8ÜØ¿È¢-

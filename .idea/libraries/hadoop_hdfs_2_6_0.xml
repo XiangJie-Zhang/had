@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hadoop-hdfs-2.6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/META-INF/lib/hadoop-hdfs-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

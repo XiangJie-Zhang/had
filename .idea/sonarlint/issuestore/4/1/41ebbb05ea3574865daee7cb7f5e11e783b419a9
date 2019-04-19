@@ -1,0 +1,9 @@
+
+jsquid:S00112 "FDefine and throw a dedicated exception instead of using a generic one.(üÚĞûşÿÿÿÿ8âÇ¬ -
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Š”ò -
+¢%squid:RedundantThrowsDeclarationCheck "eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(üÚĞûşÿÿÿÿ8âÇ¬ -
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(–¿‡8é²é³¢-
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÜÃ¬Àşÿÿÿÿ8ã‚Äˆ -
+lsquid:UselessImportCheck"ARemove this unused import 'org.apache.ibatis.annotations.Select'.(²ß˜8Â§î¯¢-
+%squid:RedundantThrowsDeclarationCheck"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(–¿‡8é²é³¢-
+¢%squid:RedundantThrowsDeclarationCheck"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(ÜÃ¬Àşÿÿÿÿ8ã‚Äˆ -

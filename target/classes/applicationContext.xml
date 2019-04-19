@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/task
+	 http://www.springframework.org/schema/task/spring-task-3.0.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!--cron定时器配置-->
+	<task:annotation-driven />
+	<!-- 导入属性配置文件 -->
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<!-- 允许JVM参数覆盖 -->
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<!-- 忽略没有找到的资源文件 -->
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath*:db.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- ==================druid连接池 配置================== -->
+	<bean id="dataSource1" class="com.alibaba.druid.pool.DruidDataSource"
+		init-method="init" destroy-method="close">
+		<!-- 基本属性 url、user、password -->
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="driverClassName" value="${jdbc.driver}"/>
+	</bean>
+
+	<bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource"
+		  init-method="init" destroy-method="close">
+		<!-- 基本属性 url、user、password -->
+		<property name="url" value="${jdbc.pgsql.url}" />
+		<property name="username" value="${jdbc.pgsql.username}" />
+		<property name="password" value="${jdbc.pgsql.password}" />
+		<property name="driverClassName" value="${jdbc.pgsql.driver}"/>
+	</bean>
+
+	<bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+		<property name="slowSqlMillis" value="1000" />
+		<property name="logSlowSql" value="true" />
+		<property name="mergeSql" value="true" />
+	</bean>
+	<bean id="dataSource" class="com.hpe.utils.datasource.DynamicDataSource">
+		<property name="targetDataSources">
+			<map key-type="java.lang.String">
+				<!-- 指定lookupKey和与之对应的数据源 -->
+				<entry key="dataSource1" value-ref="dataSource1"></entry>
+				<entry key="dataSource2" value-ref="dataSource2"></entry>
+			</map>
+		</property>
+		<!-- 这里可以指定默认的数据源 -->
+		<property name="defaultTargetDataSource" ref="dataSource1"/>
+	</bean>
+	<!--solr -->
+	<!--定义产品solr的server -->
+
+
+	<!-- 配置@Service注解扫描 -->
+	<context:component-scan base-package="com.hpe.service"></context:component-scan>
+
+	<!-- 定义事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<aop:aspectj-autoproxy> </aop:aspectj-autoproxy>
+	<bean id="manyDataSourceAspect" class="com.hpe.utils.datasource.DataSourAspect" />
+	<aop:config>
+		<aop:aspect id="c" ref="manyDataSourceAspect">
+			<aop:pointcut id="tx1"
+						  expression="execution(* *(..))" />
+			<aop:before pointcut-ref="tx1" method="before" />
+		</aop:aspect>
+	</aop:config>
+	<!--使用注释事务 -->
+	<tx:annotation-driven proxy-target-class="false"  transaction-manager="transactionManager" />
+
+	<!-- mapper配置 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 指定数据库连接池 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 加载mybatis的全局配置文件 -->
+		<!--<property name="configLocation" value="classpath:mybatis-config.mapper"></property>-->
+		<property name="typeAliasesPackage" value="com.hpe.entity"></property>
+		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+
+	</bean>
+
+	<!-- 配置mapper的bean，使用包扫描的方式 批量导入Mapper。这样mybatis所有的配置都交给spring来管理 扫描后 引用时可以直接使用类名，注意首字母小写 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 指定扫描包的全路径。如果有多个，用英文的逗号分开 -->
+		<property name="basePackage" value="com.hpe.mapper"></property>
+	</bean>
+
+	<!--初始化函数-->
+	<bean class="com.hpe.utils.HDFSUtils" init-method="init"/>
+</beans>

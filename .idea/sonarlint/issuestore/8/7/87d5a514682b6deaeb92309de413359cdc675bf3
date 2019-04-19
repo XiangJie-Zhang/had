@@ -1,0 +1,41 @@
+
+msquid:S2259ú"IA "NullPointerException" could be thrown; "inputStream" is nullable here.(¶ò†Áþÿÿÿÿ8ÊË‹¤¢-
+hsquid:CommentedOutCodeLineõ"<This block of commented-out lines of code should be removed.(ò•›Çÿÿÿÿÿ
+osquid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(¦À“–üÿÿÿÿ8Ü±Š¤¢-
+hsquid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(Ù¥—úÿÿÿÿ
+gsquid:S4488Ó"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(×«Ï½øÿÿÿÿ
+jsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§í¸¤
+@squid:S1148—"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+gsquid:S4488Œ"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(‚ûº¾úÿÿÿÿ
+O
+squid:S106C"9Replace this use of System.out or System.err by a logger.(¸…»ª
+gsquid:S4488ì"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ô»½ûüÿÿÿÿ
+asquid:S2259›"DA "NullPointerException" could be thrown; "append" is nullable here.(«¦‰ ûÿÿÿÿ
+ƒsquid:S1149ã"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ï„Š¡þÿÿÿÿ8óÅ‘¤¢-
+bsquid:S4488Î"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(èžÏË
+€squid:UselessImportCheck"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àýÿÿÿÿ8Ä–†¤¢-
+Ssquid:S1191"5Use classes from the Java API instead of Sun classes.(”ÐÎà8ÉÊÑ×¢-
+osquid:S00117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äö€¥üÿÿÿÿ
+esquid:UselessImportCheck"5Remove this unused import 'java.nio.file.LinkOption'.(‹Ä¥Äþÿÿÿÿ8–·ÊÙ¢-
+?squid:S11480"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+asquid:S4488y"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ñ¡ƒÌ
+csquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(ö®˜ï
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+gsquid:S1192„"HDefine a constant instead of duplicating this literal "content" 3 times.(±€ÁÙ8–·ÊÙ¢-
+hsquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(«ˆôéøÿÿÿÿ
+gsquid:S4488µ"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(•¤¶æÿÿÿÿÿ
+†squid:UselessImportCheck"[Remove this unused import 'com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader'.(”ÐÎà8ÉÊÑ×¢-
+jsquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(æóÐÙ8Ü±Š¤¢-
+Bsquid:S00108’")Either remove or fill this block of code.(Úîø›
+osquid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(…“©ïýÿÿÿÿ8Ü±Š¤¢-
+ksquid:UselessImportCheck"@Remove this unused import 'org.apache.ibatis.annotations.Param'.(á¬Ó²8›äœ¤¢-
+@squid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+gsquid:S3027º"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(æª©ýÿÿÿÿ
+bsquid:S4488€"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÌµÌ£
+hsquid:CommentedOutCodeLine°"<This block of commented-out lines of code should be removed.(ÎÍ¾¨ýÿÿÿÿ
+asquid:S4488a"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ã ¾Æ
+gsquid:S4488‰"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¨‡ã•üÿÿÿÿ
+osquid:CommentedOutCodeLineà"<This block of commented-out lines of code should be removed.(›¾£Úûÿÿÿÿ8Ü±Š¤¢-
+jsquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(ÏììÛ8Ü±Š¤¢-
+bsquid:S4488ž"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(óÄµ­

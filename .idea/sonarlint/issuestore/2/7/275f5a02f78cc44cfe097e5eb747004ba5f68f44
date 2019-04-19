@@ -1,0 +1,7 @@
+
+asquid:UselessImportCheck"6Remove this unused import 'org.apache.hadoop.fs.Path'.(šàö†8«èŸÍ‡-
+_squid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8ó›ÃÅ‡-
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8ß˜¾Å‡-
+lsquid:UselessImportCheck"<Remove this unused import 'org.apache.hadoop.fs.FileStatus'.(½ÉÚüûÿÿÿÿ8«èŸÍ‡-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8½ÉçÅ‡-
+nsquid:UselessImportCheck"CRemove this unused import 'org.apache.hadoop.fs.FSDataInputStream'.(ŒìÐ˜8«èŸÍ‡-

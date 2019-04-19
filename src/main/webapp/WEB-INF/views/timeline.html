@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>时光轴</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="${rc.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="${rc.contextPath}/css/time.css" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="${rc.contextPath}/css/material-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="${rc.contextPath}/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="${rc.contextPath}/css/font-awesome.min.css" rel="stylesheet">
+    <link href='${rc.contextPath}/css/2d7207a20f294df196f3a53cae8a0def.css' rel='stylesheet' type='text/css'>
+    <style>
+        .page {
+            width: 80%;
+            background: #F0F0F0 url('img/dian2.png') repeat-x;
+            float:right;
+        }
+        .box1{ position:absolute; top:200px; left:400px; width:200px; height:90px;  cursor:move;}
+        .container12 {
+            width: 400px;
+        }
+        .meplayer-container-mini {
+            margin: 0 auto;
+        }
+
+        .meplayer-container {
+            margin: 0 auto;
+        }
+        .bbb1 {
+            font-size: 14px;
+            line-height: 30px;
+
+            display: block;
+
+            width: 120px;
+            height: 30px;
+            margin: 20px auto;
+
+            text-align: center;
+
+            color: #777;
+            border: none;
+            background-color: #fff;
+
+            -webkit-appearance: none;
+
+            -moz-appearance: none;
+
+            appearance: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container12 box1" style="z-index: 5" hidden="hidden" id="mu">
+        <div class="music"></div>
+        <button type="button" class="bbb1">切换主题</button>
+    </div>
+    <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
+
+        <!--
+            Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+            Tip 2: you can also add an image using data-image tag
+        -->
+
+        <div class="logo">
+            <a href="#" class="simple-text">
+                Creative Tim
+            </a>
+        </div>
+
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="material-icons">dashboard</i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li  id="user">
+                    <a href="user.html">
+                        <i class="material-icons">person</i>
+                        <p>User Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html">
+                        <i class="material-icons">content_paste</i>
+                        <p>Table List</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a id="music">
+                        <i class="material-icons">library_books</i>
+                        <p>Music</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="office">
+                        <i class="material-icons">bubble_chart</i>
+                        <p>Office</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="picture">
+                        <i class="material-icons">location_on</i>
+                        <p>Picture</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="mov">
+                        <i class="material-icons text-gray">notifications</i>
+                        <p>video</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="none">
+                        <i class="material-icons text-gray">notifications</i>
+                        <p>其他</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page" id="ttt">
+        <div class="box">
+            <ul class="event_year">
+                <li v-for="(value, key) in list" :key="key"><label :for="key" onclick="ci(this)">{{key}}</label></li>
+            </ul>
+            <ul class="event_list">
+                <div v-for="(value, key) in list">
+                    <h3 :id="key">{{key}}</h3>
+                    <li v-for="item in value">
+                        <span>{{item.modification_time}}</span>
+                        <p>
+                            <span>
+                                {{item.resourceName}}
+                                <a v-if="item.type === 'picture'" href="javascript:void(0);" :data-url="item.resourcePath" onclick="previewImg1(this)">&nbsp;&nbsp;&nbsp;&nbsp;查看</a>
+                                <a v-else-if="item.type === 'mov'" :data-url="item.resourcePath" href="javascript:void(0);" onclick="previewMov(this)">&nbsp;&nbsp;&nbsp;&nbsp;播放</a>
+                                <a v-else-if="item.type === 'office'" :data-url="item.resourcePath" href="javascript:void(0);" onclick="previewOffice(this)">&nbsp;&nbsp;&nbsp;&nbsp;预览</a>
+                                <a v-else-if="item.type === 'music'" :data-url="item.resourcePath" href="javascript:void(0);" onclick="previewMusic(this)">&nbsp;&nbsp;&nbsp;&nbsp;试听</a>
+                                <a v-else-if="item.type === 'music'" :data-url="item.resourcePath" href="javascript:void(0);" onclick="previewMusic(this)">&nbsp;&nbsp;&nbsp;&nbsp;试听</a>
+                                <a v-else :data-url="item.resourcePath" href="javascript:void(0);" onclick="viewFile(this)">&nbsp;&nbsp;&nbsp;&nbsp;查看</a>
+                            </span>
+                        </p>
+                    </li>
+
+                </div>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <br/>
+        <br/><br/><br/><br/><br/><br/><br/>
+    </div>
+
+
+
+</div>
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="${rc.contextPath}/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/xpan/admin.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/material.min.js" type="text/javascript"></script>
+
+<!--  Charts Plugin -->
+<script src="${rc.contextPath}/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="${rc.contextPath}/js/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="${rc.contextPath}/js/544d4e7330424f82ab7c7e44f8c98dc1.js"></script>
+
+<!-- Material Dashboard javascript methods -->
+<script src="${rc.contextPath}/js/material-dashboard.js"></script>
+
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="${rc.contextPath}/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/xpan/vue.js"></script>
+<!--音乐播放器-->
+<script src="${rc.contextPath}/mdlist/meplayer.js"></script>
+<link rel="stylesheet" href="${rc.contextPath}/mdlist/meplayer.css">
+<script src="${rc.contextPath}/js/demo.js"></script>
+<script src="${rc.contextPath}/js/layer/layer.js"></script>
+<script src="${rc.contextPath}/js/xpan/timeline.js"></script>
+<script type="text/javascript">
+    function ci(obj) {
+        $('.event_year>li').removeClass('current');
+        $(obj).parent('li').addClass('current');
+        var year = $(obj).attr('for');
+        $('#' + year).parent().prevAll('div').slideUp(800);
+        $('#' + year).parent().slideDown(800).nextAll('div').slideDown(800);
+    }
+
+    $(document).ready(function (e) {
+        $(".box1").mousedown(function (e) {
+            iDiffX = e.pageX - $(this).offset().left;
+            iDiffY = e.pageY - $(this).offset().top;
+            $(document).mousemove(function (e) {
+                $(".box1").css({ "left": (e.pageX - iDiffX), "top": (e.pageY - iDiffY) });
+            });
+        });
+        $(".box1").mouseup(function () {
+            $(document).unbind("mousemove");
+        });
+    });
+    mePlayer({
+        music: {
+            src: "null",
+            title: "",
+            author: 'mp3',
+            loop: true,
+        },
+        target: '.music',
+        autoplay: false
+    })
+
+    document.querySelector('button').addEventListener('click', function() {
+        mePlayer.toggleTheme()
+    })
+</script>
+</html>

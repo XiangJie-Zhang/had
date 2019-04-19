@@ -1,0 +1,8 @@
+
+Usquid:S1135"2Complete the task associated to this TODO comment.(¶Ù«“ûÿÿÿÿ8åê© -
+vsquid:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ÃÎP8ìõŒ¬ -
+¶%squid:RedundantThrowsDeclarationCheck2"yRemove the declaration of thrown exception 'org.apache.shiro.authc.AuthenticationException' which is a runtime exception.(Ë´ã›ùÿÿÿÿ8ªÓˆ¬ -
+Tsquid:S18548"6Remove this useless assignment to local variable "us".(²©‰Æ8ó¯¬ -
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(…¯›¡8ªÓˆ¬ -
+squid:S1488H"\Immediately return this expression instead of assigning it to the temporary variable "info".(÷˜‘Ÿüÿÿÿÿ8åøº -

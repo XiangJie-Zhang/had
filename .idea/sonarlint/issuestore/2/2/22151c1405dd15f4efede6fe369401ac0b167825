@@ -1,0 +1,24 @@
+
+fsquid:S4488:"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÏÁû’8Òô¶¢¢-
+hsquid:S3027>"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Á²ëÍ8Ö…Ú¢¢-
+©%squid:RedundantThrowsDeclarationCheck6"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(×³¢Àûÿÿÿÿ8Òô¶¢¢-
+hsquid:S4042•"IUse "java.nio.Files#delete" here for better messages on error conditions.(ŞúÜö8Òô¶¢¢-
+Fsquid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Òô¶¢¢-
+esquid:S001121"FDefine and throw a dedicated exception instead of using a generic one.(š—Â¥8Òô¶¢¢-
+V
+squid:S106I"9Replace this use of System.out or System.err by a logger.(í€§Ò8Òô¶¢¢-
+csquid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(Ô—B8Òô¶¢¢-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(®¯ìĞøÿÿÿÿ8Òô¶¢¢-
+esquid:S00112,"FDefine and throw a dedicated exception instead of using a generic one.(Ä†©Ñ8Òô¶¢¢-
+Isquid:S1481["&Remove this unused "i" local variable.(‘­¦úÿÿÿÿ8Òô¶¢¢-
+jsquid:S001126"FDefine and throw a dedicated exception instead of using a generic one.(×³¢Àûÿÿÿÿ8Òô¶¢¢-
+hsquid:S3027="JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(·òñ§8Òô¶¢¢-
+hsquid:S2674E"JCheck the return value of the "read" call to see how many bytes were read.(·ÑşÁ8Òô¶¢¢-
+Fsquid:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Òô¶¢¢-
+¤%squid:RedundantThrowsDeclarationCheck1"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(š—Â¥8Òô¶¢¢-
+¤%squid:RedundantThrowsDeclarationCheck,"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ä†©Ñ8Òô¶¢¢-
+dsquid:S1075y"ARefactor your code to get this URI from a customizable parameter.(ÜæŠ¹ÿÿÿÿÿ8Òô¶¢¢-
+ksquid:S2095C"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(›¾Îº8Òô¶¢¢-
+Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Òô¶¢¢-
+Gsquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Òô¶¢¢-

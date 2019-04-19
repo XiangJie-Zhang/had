@@ -1,0 +1,16 @@
+
+fsquid:S00100ª"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º³šv
+osquid:S00117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ›Àéıÿÿÿÿ
+tsquid:S00116*"\Rename this field "block_replication" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌêÈî
+lsquid:S00100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊıÛâşÿÿÿÿ
+ssquid:S001168"VRename this field "access_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆëÔïûÿÿÿÿ
+lsquid:S00100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ›Àéıÿÿÿÿ
+Bsquid:S1075X"&Remove this hard-coded path-delimiter.(“¤·×ıÿÿÿÿ
+osquid:S00117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊıÛâşÿÿÿÿ
+ysquid:S001164"\Rename this field "modification_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¨Ğûÿÿÿÿ
+lsquid:S00100Ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÈªÜûÿÿÿÿ
+lsquid:S00100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷òªµøÿÿÿÿ
+isquid:S00117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º³šv
+fsquid:S00100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚–Q
+[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+bsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(”Ê¹ß

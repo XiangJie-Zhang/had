@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hpe.mapper.BehaviorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hpe.entity.Behavior">
+    <result column="id" property="id" />
+        <result column="oldpath" property="oldpath" />
+        <result column="newpath" property="newpath" />
+        <result column="name" property="name" />
+        <result column="date" property="date" />
+        <result column="type" property="type" />
+        <result column="msg" property="msg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        oldpath, newpath, name, date, type, msg
+    </sql>
+
+    <insert id="insertBehavior">
+        insert into behavior (oldpath, newpath, name, date, type, msg)
+        values (#{oldpath},#{newpath},#{name},#{date},#{type},#{msg})
+    </insert>
+
+
+    <select id="getEchartsNew" resultType="com.hpe.entity.count">
+
+        SELECT LEFT(date,10) AS date1, name,count(name) as count
+        FROM
+        behavior
+        <where>
+            <if test="user!=null and user!='admin'">
+                and name=#{user}
+            </if>
+            and type=#{type}
+            and  LEFT(date,10) BETWEEN #{sTime} and #{eTime}
+        </where>
+         GROUP BY date1,name order by date1
+    </select>
+</mapper>

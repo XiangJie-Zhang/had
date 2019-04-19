@@ -1,0 +1,17 @@
+
+Vsquid:S1197%"8Move the array designator from the variable to the type.(ÿ÷×þ8ï§¾£¢-
+[squid:S1197,"8Move the array designator from the variable to the type.(€°ÐÙýÿÿÿÿ8ï§¾£¢-
+usquid:S37768"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(£ÍÞ¿ýÿÿÿÿ8óÐ¾£¢-
+psquid:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¾õž›8ï§¾£¢-
+[squid:S1197"8Move the array designator from the variable to the type.(ÇÑôóýÿÿÿÿ8ï§¾£¢-
+msquid:S3027@"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(¨˜ÚÕúÿÿÿÿ8óÐ¾£¢-
+Vsquid:S1197a"8Move the array designator from the variable to the type.(ÿ÷×þ8óÐ¾£¢-
+Vsquid:S1197B"8Move the array designator from the variable to the type.(¹Ä²®8óÐ¾£¢-
+[squid:S1197S"8Move the array designator from the variable to the type.(ðîøÖøÿÿÿÿ8óÐ¾£¢-
+msquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(¨˜ÚÕúÿÿÿÿ8ï§¾£¢-
+Vsquid:S1197Z"8Move the array designator from the variable to the type.(óä¦È8óÐ¾£¢-
+Vsquid:S1197"8Move the array designator from the variable to the type.(¹Ä²®8ï§¾£¢-
+[squid:S1197h"8Move the array designator from the variable to the type.(€°ÐÙýÿÿÿÿ8óÐ¾£¢-
+]squid:S1118	":Add a private constructor to hide the implicit public one.(Ëöå‹ÿÿÿÿÿ8ï§¾£¢-
+Vsquid:S1197L"8Move the array designator from the variable to the type.(¿îèÉ8óÐ¾£¢-

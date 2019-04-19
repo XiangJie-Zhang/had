@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Stellar Admin</title>
+  <script src="${rc.contextPath}/js/jquery.min.js"></script>
+  <script src="${rc.contextPath}/js/layer/layer.js"></script>
+  <script src="${rc.contextPath}/js/jquery.slimscroll.min.js"></script>
+   <script src="${rc.contextPath}/js/vue.js"></script>
+  <script src="${rc.contextPath}/js/pan/select1.js"></script>
+  <script src="${rc.contextPath}/js/pan/uploadAndDownload.js"></script>
+  <script src="${rc.contextPath}/js/pan/delete.js"></script>
+  <script src="${rc.contextPath}/js/pan/rename.js"></script>
+   <script src="${rc.contextPath}/js/pan/contextmenu.js"></script>
+   <link rel="stylesheet" href="${rc.contextPath}/css/maps/contextmenu.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="${rc.contextPath}/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="${rc.contextPath}/images/favicon.png" />
+
+  <!-- Bootstrap styles -->
+<!-- Generic page styles -->
+<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+<link rel="stylesheet" href="${rc.contextPath}/css/jquery.fileupload.css">
+
+
+ <style type="text/css">
+ #div1{
+display:none;
+float:right;
+}
+#div2{
+display:none;
+float:right;
+}
+#lujing{
+float:left;
+}
+	.shangchuan {
+    display: inline-block;
+    background-color: #f5c153;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+    float:right;
+}
+.return {
+    display: inline-block;
+    background-color: #f5c153;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+    float:right;
+}
+
+.shangchuan:active{
+    box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #bbb;
+}
+.duicuo{
+}
+.duicuo:active{
+    box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #bbb;
+}
+	.xinjian{
+	 display: inline-block;
+    background-color:#8eb349;
+    margin-right:20px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+	float:right;
+	}
+	.xiazai,.reflash{
+		display: inline-block;
+		margin-right:20px;
+    background-color:#fbb2d0;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+	float:right;
+	}
+	.page-name title{
+		color:#f5c153;
+		text-align: center;
+	}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.ui-input-file {
+width: 130px;
+	height: 28px;
+	width:30%;
+	position:relative;
+	opacity: 1;
+	top:0px;
+    left:500px;
+      	/* 	position:absolute;
+      		top:65px;
+      		left:1000px;
+			width:50px;
+			height: 50px;
+			z-index:999;
+			/* 最关键的地方  把inp */
+    }
+   .form {
+	width: 130px;
+	height: 28px;
+	margin:30px 45px;
+	position:relative;
+}
+</style>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="${rc.contextPath}/images/logo.png" alt="logo"></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo_mini.svg" alt="logo"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <p class="page-name d-none d-lg-block">Hello,Welcome to our Ape Disk</p>
+        <p class="page-name title" style="color:#f5c153;font-size:40px;margin-left:200px;">Ape Disk</p>
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <form class="mt-2 mt-md-0 d-none d-lg-block search-input">
+              <div class="input-group">
+                <span class="input-group-addon d-flex align-items-center"><i class="icon-magnifier icons"></i></span>
+                <input type="text" class="form-control" placeholder="Search...">
+              </div>
+            </form>
+          </li>
+          <li class="nav-item dropdown mail-dropdown">
+            <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
+                <i class="icon-envelope-letter icons"></i>
+                <span class="count bg-danger"></span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation" aria-labelledby="MailDropdown">
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="images/faces/face6.jpg" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">John Doe</p>
+                  <p class="Sender-message">Hey, We have a meeting planned at the end of the day.</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="images/faces/face2.jpg" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">Leanne Jones</p>
+                  <p class="Sender-message">Can we schedule a call this afternoon?</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="images/faces/face3.jpg" alt="">
+                  <span class="badge badge-primary">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">Stella</p>
+                  <p class="Sender-message">Great presentation the other day. Keep up the good work!</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="images/faces/face4.jpg" alt="">
+                  <span class="badge badge-warning">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">James Brown</p>
+                  <p class="Sender-message">Need the updates of the project at the end of the week.</p>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item view-all">View all</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown notification-dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-speech icons"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown preview-list notification-drop-down dropdownAnimation" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-info mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject font-weight-medium">Application Error</p>
+                  <p class="font-weight-light small-text">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-speech mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject">Settings</p>
+                  <p class="font-weight-light small-text">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-envelope mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject">New user registration</p>
+                  <p class="font-weight-light small-text">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item lang-dropdown d-none d-sm-block">
+            <a class="nav-link" href="#">
+              <p class="mb-0">hdfs <i class="flag-icon flag-icon-gb"></i></p>
+            </a>
+          </li>
+          <li class="nav-item d-none d-sm-block profile-img">
+            <a class="nav-link profile-image" href="#">
+              <img src="${rc.contextPath}/images/user.png" alt="profile-img">
+              <span class="online-status online bg-success"></span>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center ml-auto" type="button" data-toggle="offcanvas">
+          <span class="icon-menu icons"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-category">
+              <span class="nav-link">全部文件</span>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">图片</span>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">视频</span>
+            </li>
+              <li class="nav-item nav-category">
+              <span class="nav-link">图片</span>
+            </li>
+              <li class="nav-item nav-category">
+              <span class="nav-link">文档</span>
+            </li>
+              <li class="nav-item nav-category">
+              <span class="nav-link">音乐</span>
+            </li>
+              <li class="nav-item nav-category">
+              <span class="nav-link">其他</span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- partial -->
+        <div class="content-wrapper" id="seeAndEdit">
+          <!-- ROW ENDS -->
+          <div class="row" id="row" v-show="show">
+            <div class="col-lg-12 grid-margin">
+              <div class="card">
+                <div class="card-body" id="table1">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW ENDS -->
+		  <div id="showfile" v-show="!show">
+		  		<b>显示文件内容</b><br />
+		  		<form>
+		  			<textarea rows="20" cols="100" v-model:value="message">{{message}}</textarea>
+		  			<input type="button" id="editButton" value="确定">
+		  		</form>
+
+		  </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+
+
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+   <!-- End custom js for this page-->
+  <script src="${rc.contextPath}/js/pan/uploadAndDownload.js"></script>
+</body>
+<script type="text/javascript">
+function createFolder(){
+	xvm.newFileShow=2;//新建文件夹
+}
+function createFile(){
+	var btn = document.getElementById('button')
+    var div2=document.getElementById("div2");
+	if (this.value == '新建文件') {
+        this.value = '显示'
+        //div1.innerHTML='隐藏了';
+        div2.style.display='none';
+     } else {
+        this.value = '新建文件'
+        //div1.innerHTML='显示了';
+        div2.style.display='block';
+    }
+}
+</script>
+<!--   查看文件及修改文件的js -->
+  <script src="${rc.contextPath}/js/pan/seeAndChange.js"></script>
+  <script src="${rc.contextPath}/js/pan/create.js"></script>
+  <script>
+/*jslint unparam: true */
+/*global window, $ */
+</script>
+</html>

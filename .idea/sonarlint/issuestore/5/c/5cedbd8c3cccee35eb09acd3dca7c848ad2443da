@@ -1,0 +1,31 @@
+
+Fsquid:S1481e")Remove this unused "conf" local variable.(ëÁÅ8ˆ÷È„¢-
+?squid:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+isquid:S3027\"KPut single-quotes around '\\' to use the faster "lastIndexOf(char)" method.(©—Î8ˆ÷È„¢-
+`squid:HiddenFieldChecke"8Rename "conf" which hides the field declared at line 42.(ëÁÅ8ˆ÷È„¢-
+Xsquid:S1141^"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ˆ÷È„¢-
+[
+squid:S106b"9Replace this use of System.out or System.err by a logger.(µ†½ëÿÿÿÿÿ8ˆ÷È„¢-
+Usquid:S1854e"8Remove this useless assignment to local variable "conf".(ëÁÅ8ˆ÷È„¢-
+osquid:S3776B"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(æä¶A8©š¿„¢-
+Usquid:S1854C"?Remove this useless assignment to local variable "isMultipart".(È˜}
+X
+squid:S899x";Do something with the "boolean" value returned by "delete".(şÏ—Ñ8µ¶É„¢-
+msquid:S2095¡"OUse try-with-resources or close this "FSDataInputStream" in a "finally" clause.(á³Í28ˆ÷È„¢-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ˆ÷È„¢-
+fsquid:UselessImportCheck";Remove this unused import 'org.apache.shiro.SecurityUtils'.(ı™ß8·¦„¢-
+V
+squid:S106k"9Replace this use of System.out or System.err by a logger.(‚şÂ£8ˆ÷È„¢-
+_squid:UselessImportCheck"4Remove this unused import 'com.hpe.utils.HDFSUtils'.(ÏÖİé8¡ÁÄ´¢-
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¡ÁÄ´¢-
+V
+squid:S106W"9Replace this use of System.out or System.err by a logger.(ÍÎÉ 8·¦„¢-
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·¦„¢-
+squid:S1217‚"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ú÷Ú8ªÊ‡£¢-
+[squid:UselessImportCheck"0Remove this unused import 'com.hpe.entity.User'.(½ĞÊê8Öøƒ¢-
+gsquid:S4042x"IUse "java.nio.Files#delete" here for better messages on error conditions.(şÏ—Ñ8µ¶É„¢-
+Fsquid:S1481C"0Remove this unused "isMultipart" local variable.(È˜}
+isquid:S3027"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(ØÏ™ğ8ˆ÷È„¢-
+ssquid:S2095f"PUse try-with-resources or close this "FSDataOutputStream" in a "finally" clause.(»Ò™İıÿÿÿÿ8ˆ÷È„¢-
+Gsquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆ÷È„¢-

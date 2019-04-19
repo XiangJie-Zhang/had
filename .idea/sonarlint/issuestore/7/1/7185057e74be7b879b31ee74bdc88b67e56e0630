@@ -1,0 +1,30 @@
+
+Ysquid:UselessImportCheck".Remove this unused import 'javax.naming.Name'.(ºÄä”8ôÚÙ„¢-
+Fsquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Í†¯¢-
+msquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(óŞúÿÿÿÿ8ğêˆ…¢-
+Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Í†¯¢-
+`squid:S1075–"ARefactor your code to get this URI from a customizable parameter.(±ç²î8æ…£…¢-
+[
+squid:S106:"9Replace this use of System.out or System.err by a logger.(ÚĞ °üÿÿÿÿ8Í†¯¢-
+[
+squid:S106^"9Replace this use of System.out or System.err by a logger.(ÚĞ °üÿÿÿÿ8Í†¯¢-
+V
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ĞÒÕ»8Í†¯¢-
+W
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(ĞÒÕ»8Í†¯¢-
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÛæÔ 8Í†¯¢-
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¶Ò¾òıÿÿÿÿ8Í†¯¢-
+ssquid:S1192:"PDefine a constant instead of duplicating this literal "è½¬æ¢è€—æ—¶ï¼š" 3 times.(ÚĞ °üÿÿÿÿ8Í†¯¢-
+\
+squid:S106„"9Replace this use of System.out or System.err by a logger.(ÚĞ °üÿÿÿÿ8Í†¯¢-
+`squid:S1075—"ARefactor your code to get this URI from a customizable parameter.(¬ÖÕÜ8æ…£…¢-
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ĞÒÕ»8Í†¯¢-
+osquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(¥¯—©ÿÿÿÿÿ8²Ş«…¢-
+Gsquid:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Í†¯¢-
+isquid:S1192B"FDefine a constant instead of duplicating this literal "Close" 3 times.(”Ìê·úÿÿÿÿ8Í†¯¢-
+esquid:S1075Ÿ"ARefactor your code to get this URI from a customizable parameter.(Ì›œ¡üÿÿÿÿ8¬ÜõŸ¢-
+msquid:S3027 "JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(é¹û¾şÿÿÿÿ8ôÚÙ„¢-
+jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(’«£Ë8Í†¯¢-
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ŞîÇ8Í†¯¢-
+Isquid:S00108ª")Either remove or fill this block of code.(å¥‡8¬åä„¢-

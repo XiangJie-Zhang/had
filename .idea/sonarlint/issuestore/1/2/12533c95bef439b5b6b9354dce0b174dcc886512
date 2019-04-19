@@ -1,0 +1,8 @@
+
+Csquid:S1075^"&Remove this hard-coded path-delimiter.(æøåX8î™®¡-
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+˜squid:S1186X"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦äè
+fsquid:S3027="JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(•Ÿï€úÿÿÿÿ
+Isquid:S1075_"&Remove this hard-coded path-delimiter.(½åğ°ûÿÿÿÿ8¯©š®¡-
+–%squid:RedundantThrowsDeclarationCheck$"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(°Ô÷‰
+©%squid:RedundantThrowsDeclarationCheck$"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(°Ô÷‰

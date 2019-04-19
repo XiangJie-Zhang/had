@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hpe.mapper.DirMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hpe.entity.Dir">
+        <id column="dir_id" property="dirId" />
+        <result column="dir_name" property="dirName" />
+        <result column="dir_createtime" property="dirCreatetime" />
+        <result column="dir_user" property="dirUser" />
+        <result column="dir_hdfspath" property="dirHdfspath" />
+        <result column="dir_updatetime" property="dirUpdatetime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        dir_id, dir_name, dir_createtime, dir_user, dir_hdfspath, dir_updatetime
+    </sql>
+
+</mapper>

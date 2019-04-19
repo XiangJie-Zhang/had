@@ -1,0 +1,6 @@
+
+–%squid:RedundantThrowsDeclarationCheck"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(–‰¨Â
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(–‰¨Â
+©%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(–‰¨Â
+8squid:S1214
+""Move constants to a class or enum.(Ø·ƒ

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hpe.mapper.BehaviorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hpe.entity.Behavior">
+    <result column="id" property="id" />
+        <result column="oldpath" property="oldpath" />
+        <result column="newpath" property="newpath" />
+        <result column="name" property="name" />
+        <result column="date" property="date" />
+        <result column="type" property="type" />
+        <result column="msg" property="msg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        oldpath, newpath, name, date, type, msg
+    </sql>
+
+</mapper>

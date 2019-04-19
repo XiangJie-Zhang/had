@@ -1,0 +1,8 @@
+
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(€°É¶8µÌ¸®¢-
+fsquid:UselessImportCheck"6Remove this unused import 'com.hpe.entity.resourceVo'.(ãÌ˜˜ùÿÿÿÿ8‘œª¯¢-
+%squid:RedundantThrowsDeclarationCheck$"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(–¿‡8çØß³¢-
+%squid:RedundantThrowsDeclarationCheck"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(€°É¶8µÌ¸®¢-
+esquid:S00112$"FDefine and throw a dedicated exception instead of using a generic one.(–¿‡8çØß³¢-
+%squid:RedundantThrowsDeclarationCheck,"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(‡ãøË8‹úÓ´¢-
+esquid:S00112,"FDefine and throw a dedicated exception instead of using a generic one.(‡ãøË8‹úÓ´¢-

@@ -1,0 +1,5 @@
+
+¢%squid:RedundantThrowsDeclarationCheck!"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(ßÔéşÿÿÿÿ8®·¡Ù¢-
+jsquid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(ßÔéşÿÿÿÿ8®·¡Ù¢-
+¢%squid:RedundantThrowsDeclarationCheck"eRemove the declaration of thrown exception 'java.lang.RuntimeException' which is a runtime exception.(ÇÉˆ­ıÿÿÿÿ8¿ıÖ¢-
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÇÉˆ­ıÿÿÿÿ8¿ıÖ¢-

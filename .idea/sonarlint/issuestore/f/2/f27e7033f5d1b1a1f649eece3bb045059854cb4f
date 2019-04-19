@@ -1,0 +1,7 @@
+
+Zjavascript:S1854v"7Remove this useless assignment to local variable "name"(¹ß¬ó8îÄß±¢-
+bjavascript:UnusedVariable<"6Remove the declaration of the unused 'width' variable.(Å¿ìÃ8üóÛ±¢-
+ajavascript:UnusedVariablev"5Remove the declaration of the unused 'name' variable.(¹ß¬ó8îÄß±¢-
+[javascript:S1854<"8Remove this useless assignment to local variable "width"(Å¿ìÃ8üóÛ±¢-
+Hjavascript:S1442&" Remove this usage of alert(...).(ëââáýÿÿÿÿ8è²àÉ¢-
+Djavascript:S1442Š" Remove this usage of alert(...).(ÜÞ«Ò8ÔÐ€²¢-

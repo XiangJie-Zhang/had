@@ -1,0 +1,16 @@
+
+nsquid:S4488¤"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¢™Òùÿÿÿÿ8ü”¨€¡-
+V
+squid:S106I"9Replace this use of System.out or System.err by a logger.(îØËÀ8ìÏ©± -
+Osquid:S1135,"2Complete the task associated to this TODO comment.(¸ˆÓS8ğ‚ˆ± -
+nsquid:S4488¾"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(øÊ¸Êşÿÿÿÿ8õ”ìƒ¡-
+[
+squid:S106K"9Replace this use of System.out or System.err by a logger.(´Äš©üÿÿÿÿ8ìÏ©± -
+squid:S1217™"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ú÷Ú8¬¶÷ß -
+gsquid:S4488["JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(éÏú'8ÏŠ³ -
+msquid:S44884"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ü±ŸÏùÿÿÿÿ8ğ‚ˆ± -
+isquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(—¶Íã8¬¶÷ß -
+Fsquid:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¶÷ß -
+[
+squid:S106E"9Replace this use of System.out or System.err by a logger.(÷ô´Ïıÿÿÿÿ8ìÏ©± -
+fsquid:S2259È"BA "NullPointerException" could be thrown; "user" is nullable here.(¡ö×Ïùÿÿÿÿ8Çâµ‚¢-

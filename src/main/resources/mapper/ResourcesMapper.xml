@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hpe.mapper.ResourcesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hpe.entity.Resources">
+        <id column="resource_id" property="resourceId" />
+        <result column="resource_path" property="resourcePath" />
+        <result column="resource_name" property="resourceName" />
+        <result column="type" property="type" />
+        <result column="owner" property="owner" />
+        <result column="size" property="size" />
+        <result column="is_delete" property="isDelete" />
+        <result column="modification_time" property="modification_time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        resource_id, resource_path, type, owner, is_delete
+    </sql>
+
+    <insert id="insertMany1" parameterType="com.hpe.entity.Resources" >
+        INSERT INTO resources (resource_id,resource_name,resource_path,type,OWNER,is_delete,size,modification_time)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.resourceId}, #{item.resourceName},
+            #{item.resourcePath},
+            #{item.type},
+            #{item.owner}, #{item.isDelete},#{item.size},#{item.modification_time}
+            )
+        </foreach>
+    </insert>
+
+    <insert id="addResource">
+        INSERT INTO resources (resource_id,resource_name,resource_path,type,OWNER,is_delete,size,modification_time)
+        VALUES
+            (
+            #{resourceId}, #{resourceName},
+            #{resourcePath},
+            #{type},
+            #{owner}, #{isDelete},#{size},#{modification_time}
+            )
+    </insert>
+
+    <select id="getTypeTimeline" resultMap="BaseResultMap">
+        select * from resources
+        <where>
+            <if test="user != null and user != 'admin'">
+                and owner = #{user}
+            </if>
+            <if test="type != null and type != ''">
+                and type = #{type}
+            </if>
+
+                and is_delete = 0
+
+        </where>
+        order by modification_time DESC
+    </select>
+</mapper>
